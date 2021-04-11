@@ -1,0 +1,579 @@
+/*--------------------------------------------------------------============================================================
+[Widget Stylesheet]
+Project:   Happyden
+/*==============================
+[Table of contents]
+WIDGET STYLESHEET
+----------------------------------
+MENU
+BUTTON
+SERVICE
+PORTFOLIO
+TEAM
+TESTIMONIAL
+CONTACT FORM
+=============================================================--------------------------------------------------------------*/
+/*---------------------------------------------------
+MENU
+----------------------------------------------------*/
+.happyden-minmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+  .happyden-minmenu ul li {
+    position: relative;
+  }
+  .happyden-minmenu ul li a {
+    text-decoration: none;
+    color: #606775;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    padding: 30px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+  }
+  .happyden-minmenu ul.sub-menu li .sub-menu {
+    right: 100%;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .happyden-minmenu ul.sub-menu li:hover >.sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .happyden-minmenu ul.sub-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 220px;
+    display: block;
+    z-index: 99;
+    box-shadow: 0 0 4px #ddd;
+    top: 100%;
+    transform: scaleY(0);
+    transition: .4s;
+    transform-origin: center top;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+  }
+  .happyden-minmenu ul li:hover > a{
+    color: #1D263A;
+  }
+  .happyden-minmenu ul.sub-menu li a {
+    padding: 5px 20px;
+    display: block;
+    font-weight: 400;
+  }
+  .happyden-minmenu ul li:hover .sub-menu {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+  }
+/*---------------------------------------------------
+BUTTON
+----------------------------------------------------*/
+.happyden-button {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out !important;
+    -moz-transition: all 0.4s ease-in-out !important;
+    -ms-transition: all 0.4s ease-in-out !important;
+    -o-transition: all 0.4s ease-in-out !important;
+    transition: all 0.4s ease-in-out !important;
+}
+a.happyden-button{
+    -webkit-transition: all 0.4s ease-in-out !important;
+    -moz-transition: all 0.4s ease-in-out !important;
+    -ms-transition: all 0.4s ease-in-out !important;
+    -o-transition: all 0.4s ease-in-out !important;
+    transition: all 0.4s ease-in-out !important;
+}
+.happyden-button-sm {
+    padding: 10px 21px 10px 21px;
+    font-size: 13px;
+    line-height: 1;
+}
+.happyden-button-md {
+    padding: 14px 22px 14px 22px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.happyden-button-lg {
+    padding: 18px 40px 18px 40px;
+    font-size: 14px;
+    line-height: 1.3333;
+}
+.happyden-button-ex {
+    padding: 23px 40px 23px 40px;
+    font-size: 15px;
+    line-height: 1.3333;
+}
+.happyden-button-block {
+    font-size: 15px;
+    line-height: 1;
+    padding: 14px 22px 14px 22px;
+    width: 100%;
+    text-align: center;
+}
+.happyden-button-text {
+    display: inline-block;
+    width: 100%;
+}
+.happyden-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    font-weight: 400;
+}
+.happyden-button-style1-bottom,
+.happyden-button-style1-top,
+.happyden-button-style1-right,
+.happyden-button-style1-left,
+.happyden-button-style2-shutouthor,
+.happyden-button-style2-shutoutver,
+.happyden-button-style2-shutinhor,
+.happyden-button-style2-shutinver,
+.happyden-button-style2-scshutouthor,
+.happyden-button-style2-scshutoutver,
+.happyden-button-style2-dshutinhor,
+.happyden-button-style2-dshutinver,
+.happyden-button-style3-radialin,
+.happyden-button-style3-radialout,
+.happyden-button-style3-rectin,
+.happyden-button-style3-rectout {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition: all 0.3s ease-in-out !important;
+    -moz-transition: all 0.3s ease-in-out !important;
+    -ms-transition: all 0.3s ease-in-out !important;
+    -o-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
+}
+.happyden-button-style1-bottom:before,
+.happyden-button-style1-top:before,
+.happyden-button-style1-right:before,
+.happyden-button-style1-left:before,
+.happyden-button-style2-shutinhor:before,
+.happyden-button-style2-shutinver:before,
+.happyden-button-style2-shutouthor:before,
+.happyden-button-style2-shutoutver:before,
+.happyden-button-style2-scshutouthor:before,
+.happyden-button-style2-scshutoutver:before,
+.happyden-button-style2-dshutinhor:before,
+.happyden-button-style2-dshutinver:before,
+.happyden-button-style3-radialin:before,
+.happyden-button-style3-radialout:before,
+.happyden-button-style3-rectin:before,
+.happyden-button-style3-rectout:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.50s;
+    transition-duration: 0.50s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.happyden-button-style3-radialin:before,
+.happyden-button-style3-radialout:before {
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.happyden-button-style3-radialin:before { 
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+.happyden-button-style3-rectin:before,
+.happyden-button-style3-rectout:before {
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.happyden-button-style3-rectout:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.happyden-button-style3-rectout:hover:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.happyden-button-style3-rectin:hover:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.happyden-button-style3-radialout:hover:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+.happyden-button-style3-radialin:hover:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.happyden-button-style1-top:before {
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.happyden-button-style1-right:before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.happyden-button-style1-left:before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+.happyden-button-style2-shutouthor:before,
+.happyden-button-style2-scshutoutver:before{
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+.happyden-button-style2-shutoutver:before,
+.happyden-button-style2-scshutouthor:before{
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.happyden-button-style2-shutinhor:before{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+}
+.happyden-button-style2-shutinver:before{
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+}
+.happyden-button-style1-bottom:hover:before,
+.happyden-button-style1-top:hover:before{
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+.happyden-button-style1-left:hover:before,
+.happyden-button-style1-right:hover:before,
+.happyden-button-style2-shutouthor:hover:before,
+.happyden-button-style2-shutoutver:hover:before{
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.happyden-button-style2-shutinhor:hover:before{
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+.happyden-button-style2-shutinver:hover:before{
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+.happyden-button-style2-scshutouthor:hover:before{
+  -webkit-transform: scaleX(0.9);
+  transform: scaleX(0.9);
+}
+.happyden-button-style2-scshutoutver:hover:before{
+  -webkit-transform: scaleY(0.8);
+  transform: scaleY(0.8);
+}
+/*Diagonal*/
+.happyden-button-style2-dshutinhor:before,
+.happyden-button-style2-dshutinver:before {
+    top: 50%;
+    right: 50%;
+    width: 120%;
+    height: 0%;
+    -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
+    transform: translateX(50%) translateY(-50%) rotate(45deg);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: all;
+    transition-property: all;
+}
+.happyden-button-style2-dshutinver:before {
+    -webkit-transform: translateX(50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(50%) translateY(-50%) rotate(-45deg);
+}
+.happyden-button-style2-dshutinhor:hover:before,
+.happyden-button-style2-dshutinver:hover:before{
+    height: 220%;
+}
+/*---------------------------------------------------
+SERVICE
+----------------------------------------------------*/
+.happyden__service--single-item {
+    background-color: #EBF5FF;
+    padding: 50px;
+    position: relative;
+    transition: .4s;
+    margin-bottom: 24px;
+}
+h1.happyden__service--numbar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #DFE9F2;
+    font-size: 96px;
+    line-height: 60px;
+    margin-bottom: 0px;
+    text-align: left;
+    letter-spacing: -1px;
+    font-weight: 600;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.happyden__service--headding {
+    font-size: 21px;
+    line-height: 30px;
+    color: #1D263A;
+    font-weight: 600;
+    margin-bottom: 34px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.happyden__service--excerpt {
+    color: #1D263A;
+    line-height: 30px;
+    font-size: 17px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.happyden__service--icon {
+    font-size: 20px;
+    transition: .4s;
+    color: #1D263A;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.happyden__service--single-item:hover {
+    background-color: #FFCD28;
+}
+.happyden__service--single-item:hover .happyden__service--dis {
+    opacity: 1;
+}
+.happyden__service--single-item:hover 
+.happyden__service--numbar {
+    color: #000;
+}
+/*---------------------------------------------------
+TEAM
+----------------------------------------------------*/
+.happyden--team-content {
+    background-color: #FFCD28;
+    text-align: center;
+    padding: 17px;
+    transition: .4s ease-in-out;
+    position: absolute;
+    bottom: -30%;
+    width: 100%;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+}
+.happyden--team-name {
+    color: #1D263A;
+    font-size: 21px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.happyden--team-title {
+    color: #1D263A;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+}
+.happyden--team-thum img {
+    width: 100%;
+    height: 418px !important;
+    object-fit: cover;
+}
+.happyden--team-single { 
+    position: relative;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+.happyden--team-single:hover .happyden--team-content {
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+}
+/*---------------------------------------------------
+PORTFOLIO
+----------------------------------------------------*/
+a.happyden-portfolio-content {
+    position: absolute;
+    display: inline-block;
+    background: #fff;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    padding: 30px 30px;
+    margin: 30px;
+    transform: translateY(15%);
+    -webkit-transform: translateY(15%);
+    -moz-transform: translateY(15%);
+    -ms-transform: translateY(15%);
+    -o-transform: translateY(15%);
+    opacity: 0;
+    visibility: hidden;
+}
+.happyden-portfolio-item:hover a.happyden-portfolio-content {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+.happyden-portfolio-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-icon {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background-color: #FFCD28;
+}
+.happyden-portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+.happyden-portfolio-excerpt {
+    flex: 0 0 75%;
+}
+.happyden-portfolio-excerpt p {
+    margin-bottom: 0px !important;
+}
+.happyden--cleint--info-title {
+    font-size: 21px;
+    font-weight: 600;
+    font-family: 'Mazzard H';
+    margin-left: 20px;
+    color: #1D263A;
+}
+.happyden--cleint--info-details {
+    font-size: 17px;
+    color: #475062;
+    font-weight: 400;
+    font-family: 'Mazzard H';
+}
+/*---------------------------------------------------
+TESTIMONIAL
+----------------------------------------------------*/
+.happyden--tl-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50% !important;
+    margin-left: 20px;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+.happyden--tl-single-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.happyden--tl-name {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #1D263A;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+.happyden--tl-title {
+    color: #4A5162;
+    font-size: 17px;
+    line-height: 30px;
+}
+.happyden--tl-single-top p {
+    color: #222831;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.happyden--tl-single-top {
+    margin-bottom: 50px;
+}
+.happyden--tl-normal {
+    position: relative;
+}
+.happyden--tl-icon {
+    position: absolute;
+    right: -100px;
+    top: 0;
+}
+/*---------------------------------------------------
+CONTACT FORM
+----------------------------------------------------*/
+.happyden--contactform-wraper.absolute {
+    position: relative;
+}
+.happyden--contactform-wraper.absolute input[type=submit],
+.happyden--contactform-wraper.absolute button[type=submit] {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.happyden-navigation.widget {
+    margin-right: -5px;
+}

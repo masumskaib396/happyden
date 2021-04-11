@@ -1,0 +1,142 @@
+@media only screen and (min-width: 1600px) {
+    .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: 1320px !important;
+    }
+}
+
+/*For bigger screen then normal 960px desktop*/
+@media (min-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+    .nav-previous span.nav-label {
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    
+    .nav-links .nav-title {
+        font-size: 15px;
+    }
+    
+    .nav-next .nav-label {
+        font-size: 15px;
+    }
+
+    .nav-links .nav-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+/*For Tablet Width Layout*/
+@media (max-width: 991px) {
+    a.happyden-portfolio-content{
+        margin: 10px;
+    }
+    .happyden-portfolio-excerpt{
+        flex: 100%;
+    }
+    .happyden-portfolio-excerpt {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+    }
+
+    .nav-links .nav-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .happyden-portfolio-excerpt p {
+        margin-bottom: 0px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 50px;
+    }
+
+    .nav-previous span.nav-label {
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    
+    .nav-links .nav-title {
+        font-size: 15px;
+    }
+    
+    .nav-next .nav-label {font-size: 15px;}
+}
+
+/*For Tablet Layout*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .happyden-portfolio-excerpt p {
+        margin-bottom: 0px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 50px;
+    }
+    a.happyden-portfolio-content{
+        padding: 15px 15px;
+    }
+    
+
+}
+
+/*For Wide Mobile Layout*/
+@media (max-width: 767px) {
+
+    .happyden-portfolio-excerpt p{
+        font-size: 16px;
+    }
+    .happyden-portfolio-item img{
+        width: 100%;
+    }
+    a.happyden-portfolio-content{
+        padding: 25px;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .title-icon{
+        width: 50px;
+        height: 50px;
+        line-height: 48px;
+    }
+
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 768px !important;
+    }
+
+
+    .happyden--team-content {
+        bottom: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .happyden__gallery--thumb, .happyden__gallery--thumb.full-height{
+        height: 200px;
+    }
+    
+
+
+
+}
+
+
+/*For 320-384px up Mobile Layout*/
+@media (max-width: 479px) {
+
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 390px !important;
+    }
+
+
+}
+

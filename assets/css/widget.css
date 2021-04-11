@@ -1,0 +1,1292 @@
+/*--------------------------------------------------------------============================================================
+[Widget Stylesheet]
+
+Project:   Happyden
+/*==============================
+[Table of contents]
+
+WIDGET STYLESHEET
+----------------------------------
+MENU
+BREADCRUMB
+BUTTON
+SERVICE
+PORTFOLIO
+TEAM
+PRICING BOX
+IMAGE BOX
+PROGRESS BAR
+ANIMATED TEXT
+DUAL HEADDING
+GALLERY
+TESTIMONIAL
+CONTACT FORM
+BLOG
+
+=============================================================--------------------------------------------------------------*/
+
+/*---------------------------------------------------
+MENU
+----------------------------------------------------*/
+.elementor-custom-embed-play i{
+    text-shadow: none;
+}
+.happyden-minmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+  .happyden-minmenu ul li {
+    position: relative;
+  }
+  
+  .happyden-minmenu ul li a {
+    text-decoration: none;
+    color: #606775;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    padding: 30px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+  }
+  .happyden-minmenu ul.sub-menu li .sub-menu {
+    left: 100%;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .happyden-minmenu ul.sub-menu li:hover >.sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .happyden-minmenu ul.sub-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 220px;
+    display: block;
+    z-index: 99;
+    box-shadow: 0 0 4px #ddd;
+    top: 100%;
+    transform: scaleY(0);
+    transition: .4s;
+    transform-origin: center top;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+  }
+  .happyden-minmenu ul li:hover > a{
+    color: #1D263A;
+  }
+  .happyden-minmenu ul.sub-menu li a {
+    padding: 5px 20px;
+    display: block;
+    font-weight: 400;
+  }
+  
+  .happyden-minmenu ul li:hover .sub-menu {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+  }
+
+/*---------------------------------------------------
+BREADCRUMB
+----------------------------------------------------*/
+
+ul.happyden-breadcrumbs {
+	display: block;
+	margin: 0;
+	padding: 0; 
+	list-style: none;
+}
+
+ul.happyden-breadcrumbs li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+ul.happyden-breadcrumbs li:last-child {
+	margin: 0;
+}
+
+ul.happyden-breadcrumbs li a,
+ul.happyden-breadcrumbs li span.happyden-breadcrumbs-text,
+ul.happyden-breadcrumbs li span.happyden-breadcrumbs-separator-icon {
+	display: block;
+}
+
+ul.happyden-breadcrumbs li span.happyden-breadcrumbs-text {
+	-webkit-transition: all .4s;
+	        transition: all .4s;
+}
+
+span.happyden-breadcrumbs-home-icon {
+	margin-right: 10px;
+}
+
+/*---------------------------------------------------
+BUTTON
+----------------------------------------------------*/
+.happyden-button {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out !important;
+    -moz-transition: all 0.4s ease-in-out !important;
+    -ms-transition: all 0.4s ease-in-out !important;
+    -o-transition: all 0.4s ease-in-out !important;
+    transition: all 0.4s ease-in-out !important;
+}
+a.happyden-button{
+    -webkit-transition: all 0.4s ease-in-out !important;
+    -moz-transition: all 0.4s ease-in-out !important;
+    -ms-transition: all 0.4s ease-in-out !important;
+    -o-transition: all 0.4s ease-in-out !important;
+    transition: all 0.4s ease-in-out !important;
+}
+.happyden-button-sm {
+    padding: 10px 21px 10px 21px;
+    font-size: 13px;
+    line-height: 1;
+}
+.happyden-button-md {
+    padding: 14px 22px 14px 22px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.happyden-button-lg {
+    padding: 18px 40px 18px 40px;
+    font-size: 14px;
+    line-height: 1.3333;
+}
+.happyden-button-ex {
+    padding: 23px 40px 23px 40px;
+    font-size: 15px;
+    line-height: 1.3333;
+}
+.happyden-button-block {
+    font-size: 15px;
+    line-height: 1;
+    padding: 14px 22px 14px 22px;
+    width: 100%;
+    text-align: center;
+}
+.happyden-button-text {
+    display: inline-block;
+    width: 100%;
+}
+
+.happyden-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    font-weight: 400;
+}
+.happyden-button-style1-bottom,
+.happyden-button-style1-top,
+.happyden-button-style1-right,
+.happyden-button-style1-left,
+.happyden-button-style2-shutouthor,
+.happyden-button-style2-shutoutver,
+.happyden-button-style2-shutinhor,
+.happyden-button-style2-shutinver,
+.happyden-button-style2-scshutouthor,
+.happyden-button-style2-scshutoutver,
+.happyden-button-style2-dshutinhor,
+.happyden-button-style2-dshutinver,
+.happyden-button-style3-radialin,
+.happyden-button-style3-radialout,
+.happyden-button-style3-rectin,
+.happyden-button-style3-rectout {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition: all 0.3s ease-in-out !important;
+    -moz-transition: all 0.3s ease-in-out !important;
+    -ms-transition: all 0.3s ease-in-out !important;
+    -o-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
+}
+.happyden-button-style1-bottom:before,
+.happyden-button-style1-top:before,
+.happyden-button-style1-right:before,
+.happyden-button-style1-left:before,
+.happyden-button-style2-shutinhor:before,
+.happyden-button-style2-shutinver:before,
+.happyden-button-style2-shutouthor:before,
+.happyden-button-style2-shutoutver:before,
+.happyden-button-style2-scshutouthor:before,
+.happyden-button-style2-scshutoutver:before,
+.happyden-button-style2-dshutinhor:before,
+.happyden-button-style2-dshutinver:before,
+.happyden-button-style3-radialin:before,
+.happyden-button-style3-radialout:before,
+.happyden-button-style3-rectin:before,
+.happyden-button-style3-rectout:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.50s;
+    transition-duration: 0.50s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.happyden-button-style3-radialin:before,
+.happyden-button-style3-radialout:before {
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.happyden-button-style3-radialin:before { 
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+.happyden-button-style3-rectin:before,
+.happyden-button-style3-rectout:before {
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.happyden-button-style3-rectout:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.happyden-button-style3-rectout:hover:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.happyden-button-style3-rectin:hover:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.happyden-button-style3-radialout:hover:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+.happyden-button-style3-radialin:hover:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.happyden-button-style1-top:before {
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.happyden-button-style1-right:before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+.happyden-button-style1-left:before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.happyden-button-style2-shutouthor:before,
+.happyden-button-style2-scshutoutver:before{
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.happyden-button-style2-shutoutver:before,
+.happyden-button-style2-scshutouthor:before{
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.happyden-button-style2-shutinhor:before{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+}
+.happyden-button-style2-shutinver:before{
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+}
+.happyden-button-style1-bottom:hover:before,
+.happyden-button-style1-top:hover:before{
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+.happyden-button-style1-left:hover:before,
+.happyden-button-style1-right:hover:before,
+.happyden-button-style2-shutouthor:hover:before,
+.happyden-button-style2-shutoutver:hover:before{
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.happyden-button-style2-shutinhor:hover:before{
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+.happyden-button-style2-shutinver:hover:before{
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+.happyden-button-style2-scshutouthor:hover:before{
+  -webkit-transform: scaleX(0.9);
+  transform: scaleX(0.9);
+}
+.happyden-button-style2-scshutoutver:hover:before{
+  -webkit-transform: scaleY(0.8);
+  transform: scaleY(0.8);
+}
+/*Diagonal*/
+.happyden-button-style2-dshutinhor:before,
+.happyden-button-style2-dshutinver:before {
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 0%;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: all;
+    transition-property: all;
+}
+.happyden-button-style2-dshutinver:before {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.happyden-button-style2-dshutinhor:hover:before,
+.happyden-button-style2-dshutinver:hover:before{
+    height: 220%;
+}
+/*---------------------------------------------------
+SERVICE
+----------------------------------------------------*/
+.happyden__service--single-item {
+    background-color: #EBF5FF;
+    padding: 50px;
+    position: relative;
+    transition: .4s;
+    margin-bottom: 24px;
+}
+h1.happyden__service--numbar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #DFE9F2;
+    font-size: 96px;
+    line-height: 60px;
+    margin-bottom: 0px;
+    text-align: right;
+    letter-spacing: -1px;
+    font-weight: 600;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.happyden__service--headding {
+    font-size: 21px;
+    line-height: 30px;
+    color: #1D263A;
+    font-weight: 600;
+    margin-bottom: 34px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.happyden__service--excerpt {
+    color: #1D263A;
+    line-height: 30px;
+    font-size: 17px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.happyden__service--icon {
+    font-size: 20px;
+    transition: .4s;
+    color: #1D263A;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.happyden__service--single-item:hover {
+    background-color: #FFCD28;
+}
+
+.happyden__service--single-item:hover .happyden__service--dis {
+    opacity: 1;
+}
+
+.happyden__service--single-item:hover 
+.happyden__service--numbar {
+    color: #000;
+}
+.happyden__service--icon {
+    transition: .4s;
+}
+.happyden__service--single-item:hover .happyden__service--icon {
+    margin-left: 30px;
+}
+/*---------------------------------------------------
+TEAM
+----------------------------------------------------*/
+.happyden--team-content {
+    background-color: #FFCD28;
+    text-align: center;
+    padding: 17px;
+    transition: .4s ease-in-out;
+    position: absolute;
+    bottom: -30%;
+    width: 100%;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+}
+
+.happyden--team-name {
+    color: #1D263A;
+    font-size: 21px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.happyden--team-title {
+    color: #1D263A;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.happyden--team-thum img {
+    width: 100%;
+    height: 418px !important;
+    object-fit: cover;
+}
+
+.happyden--team-single { 
+    position: relative;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+.happyden--team-single:hover .happyden--team-content {
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*---------------------------------------------------
+PRICING BOX
+----------------------------------------------------*/
+
+/* Pricing Menu Start */
+
+.happyden-pricing-list-wrapper.border_bottom .happyden-pricing-list-item:last-child {
+    border-bottom: none !important;
+  }
+  
+  .happyden-pricing-list-item.yes{
+    display: flex;
+  }
+  
+  .happyden-pricing-list-item-thumbnail{
+    overflow: hidden;
+  }
+  
+  .happyden-pricing-list-item-thumbnail img{
+    height: 100% !important;
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+  }
+  .happyden-pricing-title {
+    display: flex;
+    align-items: center;
+  }
+  .happyden-pricing-title .happyden-pricing-list-item-price {
+      margin-left: auto;
+  }
+  
+  .happyden-pricing-list-item-content-title{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .happyden-pricing-list-item-content-description{
+    margin: 0;
+  }
+  
+  .happyden-pricing-list-item-price span{
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+  .happyden-pricing-list-item-content-action{
+    display: inline-block;
+    transition: all .3s ease;
+  }
+  
+  .happyden-pricing-list-item-content-conntector {
+    border-bottom: 1px dashed;
+    height: 1px;
+    flex-grow: 1;
+    align-self: center;
+    margin: 0 15px;
+  }
+  
+  /* Pricing List End */
+  /* Pricing Table Start */
+  
+  .left{
+    text-align: left;
+  }
+  
+  .left .happyden-pricing-table-features li{
+    justify-content: flex-start;
+  }
+  
+  .left .price-box{
+    margin-right: auto;
+  }
+  
+  .center{
+    text-align: center;
+  }
+  
+  .center.happyden-pricing-table-features li{
+    justify-content: center;
+  }
+  
+  .center .price-box{
+    margin: 0 auto;
+  }
+  
+  .right{
+    text-align: right;
+  }
+  
+  .right .happyden-pricing-table-features li{
+    justify-content: flex-end;
+  }
+  
+  .right .price-box{
+    margin-left: auto;
+  }
+  
+  .happyden-pricing-table-header {
+    position: relative;
+    z-index: -1;
+  }
+  
+  .happyden-pricing-table-header .happyden-pricing-table-header-curved svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .happyden-pricing-table-title{
+    margin: 0 0 16px 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .happyden-pricing-table-subtitle{
+    margin: 0 0 10px 0;
+  }
+  
+  .price-box{
+    position: relative;
+  }
+  .happyden-pricing-table-price{
+    position: relative;
+  }
+  .happyden-pricing-table-price.happyden-discount-price-yes{
+    display: inline-flex;
+    align-items: flex-end;
+  }
+  .happyden-pricing-table-price.happyden-discount-price-yes .happyden-pricing-table-regular-price{
+    text-decoration: line-through;
+    font-size: 20px;
+    color: #e5e5e5;
+    line-height: 2.1em;
+  }
+  .happyden-pricing-table-price svg{
+    position: absolute;
+  }
+  
+  .happyden-pricing-table-wrapper .happyden-pricing-table-price p.happyden-pricing-table-new-price {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -3.2px;
+  }
+  
+  .happyden-pricing-table-wrapper .happyden-pricing-table-price span.happyden-price-period {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0px;
+  }
+  
+  .happyden-pricing-table-price p{
+    margin: 0;
+  }
+  .price-box p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 100%;
+  }
+  
+  .happyden-pricing-table-features{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .happyden-pricing-table-features li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  
+  .list-border-bottom li:not(:last-child){
+    border-bottom: 1px solid #ff5985;
+  }
+  
+  .happyden-pricing-table-features li .happyden-pricing-li-icon{
+    margin-right: 7px;
+  }
+  
+  .happyden-pricing-table-action {
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 1;
+    display: inline-block;
+  }
+  
+  .happyden-pricing-table-badge-wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s ease;
+  }
+  
+  .happyden-pricing-table-wrapper{
+    transition: all .3s ease;
+  }
+  
+  .happyden-pricing-table-wrapper.transition_top{
+    transition: all .3s ease;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  
+  .happyden-pricing-table-wrapper.transition_top:hover{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+  }
+  
+  .happyden-pricing-table-wrapper.transition_bottom{
+    transition: all .3s ease;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  
+  .happyden-pricing-table-wrapper.transition_bottom:hover{
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+  }
+  
+  .happyden-pricing-table-wrapper.transition_zoom{
+    transition: all .3s ease;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  
+  .happyden-pricing-table-wrapper.transition_zoom:hover{
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+  }
+  
+  .happyden-pricing-table-wrapper .text-badge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #13c83a;
+    padding: 13px 50px;
+    width: 160px;
+      text-align: center;
+    -webkit-transform: rotate(45deg) translate(40px, -22px);
+            transform: rotate(45deg) translate(40px, -22px);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  .happyden-pricing-table-wrapper .icon-badge {
+    position: absolute;
+    padding: 15px 10px;
+    border-radius: 0 0 40px 40px;
+    background: #13c83a;
+    right: 30px;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .happyden-pricing-table-promo-label{
+    display: block;
+  }
+  .happyden-pricing-table-currency{
+    position: relative;
+  }
+  
+  .happyden-pricing-table-price-subtitle{
+    display: block;
+  }
+
+
+
+
+  
+  /*---------------------------------------------------
+  PROGRESS BAR
+  ----------------------------------------------------*/
+  .ldBar {
+    position:relative;
+  }
+  
+  .ldBar.label-center > .ldBar-label {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    text-shadow:0 0 3px #ffffff;
+  }
+  
+  .happyden-progress-bar .ldBar-label:after {
+    content:"%";display:inline; 
+    position: absolute;
+  }
+  
+  .ldBar.no-percent .ldBar-label:after {
+    content:""
+  }
+  
+  
+  [class*="happyden-progress-bar-"].line {
+    position: relative;
+  }
+
+  [class*="happyden-progress-bar-"].line .ldBar-label {
+  position: absolute;
+  top: -12px;
+  right: 0;
+}
+
+[class*="happyden-progress-bar-"].line-bubble {
+  position: relative;
+}
+
+[class*="happyden-progress-bar-"].line-bubble .ldBar-label {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translate(-50%, 25%);
+  transform: translate(-50%, 25%);
+  background-color: #ccc;
+  line-height: 27px;
+}
+
+[class*="happyden-progress-bar-"].circle {
+  position: relative;
+}
+
+[class*="happyden-progress-bar-"].circle .ldBar-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+[class*="happyden-progress-bar-"].circle h3 {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+[class*="happyden-progress-bar-"].fan {
+  position: relative;
+}
+
+[class*="happyden-progress-bar-"].fan svg {
+  margin-top: -40%;
+}
+
+[class*="happyden-progress-bar-"].fan h3 {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+[class*="happyden-progress-bar-"].fan .ldBar-label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -20%);
+  transform: translate(-50%, -20%);
+  font-size: 30px;
+  bottom: 7%;
+}
+
+[class*="happyden-progress-bar-"].fan .left-title {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+[class*="happyden-progress-bar-"].fan .right-title {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+}
+
+.happyden-progress-bar svg:not(:root) {
+  overflow: hidden;
+  height: inherit;
+}
+
+.happyden-progress-bar-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*---------------------------------------------------
+DUAL HEADDING
+----------------------------------------------------*/
+.happyden-dual-heading .happyden-dual-heading-wrapper {
+  padding: 5px;
+}
+
+.happyden-dual-heading .happyden-dual-heading-wrapper .happyden-dual-heading-description {
+  line-height: 26px;
+  margin: 30px 0 0 0;
+  padding: 10px;
+  font-weight: 400;
+}
+.happyden-dual-heading .happyden-dual-heading-wrapper .happyden-dual-heading-icon {
+  display: inline-block;
+}
+.happyden-dual-heading .happyden-dual-heading-wrapper .happyden-dual-heading-icon i {
+  font-size: 36px;
+}
+
+.happyden-dual-heading .happyden-dual-heading-wrapper .happyden-dual-heading-title {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.happyden-dual-heading .happyden-dual-heading-wrapper .happyden-dual-heading-title {
+  font-size: 30px;
+  color: #132c47;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.happyden-dual-heading .happyden-dual-heading-wrapper .happyden-dual-heading-title .first-heading,
+.happyden-dual-heading .happyden-dual-heading-wrapper .happyden-dual-heading-title .second-heading {
+  padding: 15px 10px;
+}
+
+.happyden-dual-heading .happyden-dual-heading-wrapper .happyden-dual-heading-title span {
+  color: #132c47;
+}
+
+/*---------------------------------------------------
+ANIMATED TEXT
+----------------------------------------------------*/
+.morphext > .animated {
+  display: inline-block;
+}
+/* morphext style end*/
+
+.happyden-animated-text-align-left{
+  text-align: left;
+}
+
+.happyden-animated-text-align-center{
+  text-align: center;
+}
+
+.happyden-animated-text-align-right{
+  text-align: right;
+}
+
+.happyden-typed-strings{
+  margin: 0;
+}
+
+.happyden-animated-text-pre-heading,
+.happyden-animated-text-animated-heading,
+.happyden-animated-text-post-heading {
+	font-size: 30px;
+	font-weight: 600;
+}
+/*---------------------------------------------------
+GALLERY
+----------------------------------------------------*/
+.happyden__gallery--single-item {
+  position: relative;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.happyden__gallery--content {
+  position: absolute;
+  top: 100%;
+  background-color: #FFCD28;
+  width: 100%;
+    height: 100%;
+    align-items: center;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+}
+.happyden__gallery--thumb {
+    height: 190px;
+    width: 100%;
+}
+
+.happyden__gallery--thumb img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.happyden__gallery--title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D263A;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.happyden__gallery--sub-title {
+    color: #4A4737;
+    font-size: 17px;
+    line-height: 30px;
+}
+.happyden__gallery--inner-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: center;
+    display: block;
+    margin: 0px 40px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.happyden__gallery--wraper {
+    margin-left: -30px;
+}
+.happyden__gallery--icon i {
+    color: #1D263A;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.happyden__gallery--single-item:hover .happyden__gallery--content {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+}
+a.happyden--popup.happyden__gallery--single-item{
+    display: block;
+}
+.happyden__gallery--thumb.full-height {
+    height: 297px;
+}
+/*---------------------------------------------------
+IMAGE BOX
+----------------------------------------------------*/
+.happyden__imagebox--content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 0px 0px 6px 6px;
+}
+.happyden__imagebox--title h4 {
+    color: #1D263A;
+    font-size: 21px;
+    margin-bottom: 10px;
+    line-height: 1.428em;
+    font-weight: 600;
+}
+.happyden__imagebox--discription p {
+    color: #4A5162;
+    font-size: 17px;
+    line-height: 1.764em;
+    margin-bottom: 0px;
+}
+.happyden__imagebox--thumb img {
+    border-radius: 6px 6px 0px 0px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center top;
+}
+.happyden__imagebox--discription p{
+    margin-bottom: 0px !important;
+}
+/*---------------------------------------------------
+PORTFOLIO
+----------------------------------------------------*/
+a.happyden-portfolio-content {
+    position: absolute;
+    display: inline-block;
+    background: #fff;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 30px 30px;
+    margin: 30px;
+    transform: translateY(15%);
+    -webkit-transform: translateY(15%);
+    -moz-transform: translateY(15%);
+    -ms-transform: translateY(15%);
+    -o-transform: translateY(15%);
+    opacity: 0;
+    visibility: hidden;
+}
+.happyden-portfolio-item:hover a.happyden-portfolio-content {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+.happyden-portfolio-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-icon {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background-color: #FFCD28;
+    color: #1D263A;
+}
+
+.happyden-portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.happyden-portfolio-excerpt {
+    flex: 0 0 75%;
+}
+
+.happyden-portfolio-excerpt p {
+    margin-bottom: 0px !important;
+    color: #4A5162;
+}
+
+.happyden--cleint--info-title {
+    font-size: 21px;
+    font-weight: 600;
+    font-family: 'Mazzard H';
+    margin-right: 20px;
+    color: #1D263A;
+}
+
+.happyden--cleint--info-details {
+    font-size: 17px;
+    color: #475062;
+    font-weight: 400;
+    font-family: 'Mazzard H';
+}
+
+
+/*---------------------------------------------------
+TESTIMONIAL
+----------------------------------------------------*/
+.happyden--tl-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50% !important;
+    margin-right: 20px;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+
+.happyden--tl-single-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.happyden--tl-name {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #1D263A;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+.happyden--tl-title {
+    color: #4A5162;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.happyden--tl-single-top p {
+    color: #222831;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.happyden--tl-single-top {
+    margin-bottom: 50px;
+}
+.happyden--tl-normal {
+    position: relative;
+}
+
+.happyden--tl-icon {
+    position: absolute;
+    left: -100px;
+    top: 0;
+}
+
+
+/*---------------------------------------------------
+CONTACT FORM
+----------------------------------------------------*/
+.happyden--contactform-wraper.absolute {
+    position: relative;
+}
+
+.happyden--contactform-wraper.absolute input[type=submit],
+.happyden--contactform-wraper.absolute button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*---------------------------------------------------
+BLOG
+----------------------------------------------------*/
+.happyden-post-widget-item{
+    background-color: #fff;
+    margin-bottom: 24px;
+    padding: 30px;
+    transition: .4s;
+}
+
+.happyden-post-widget-item:hover {
+    box-shadow: 0px 4px 54px rgb(0 0 0 / 8%);
+}
+
+.post-title {
+    font-size: 28px;
+    line-height: 46px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    word-break: break-word;
+}
+.happyden-navigation.widget {
+    margin-left: -5px;
+}
+a.post-btn {
+    display: flex;
+    align-items: center;
+}
+.post-thumbnail img {
+    object-fit: cover;
+}
+span.icon-after.btn-icon{
+    display: flex;
+}
+.happyden-navigation {
+    justify-content: center;
+    display: flex;
+    margin-left: 0;
+}
+.happyden-navigation.widget {
+    margin-left: 0px;
+    margin-top: 30px;
+}

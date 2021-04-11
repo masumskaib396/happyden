@@ -1,0 +1,27 @@
+body{
+    font-family: 'Mazzard H';
+  }
+  h1, h2, h3, h4, h5{
+    font-family: 'Mazzard H';
+  }
+  .elementor-element .icon {
+    position: relative;
+  }
+  .elementor-element .icon .htmega-icon::after {
+    content: "HT";
+    font-size: 10px;
+    opacity: 0.4;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+  
+  /*Counter Css*/
+  .elementor-counter .elementor-counter-number-prefix,
+  .elementor-counter .elementor-counter-number-suffix {
+      flex-grow: unset !important;
+  }
+  .elementor-widget-container .happyden-single-post {
+    margin-left: 0px;
+  }
+  /*Counter css end*/

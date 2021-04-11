@@ -1,0 +1,62 @@
+@media only screen and (min-width: 1600px) {
+    .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: 1320px !important;
+    }
+}
+
+/*For bigger screen then normal 960px desktop*/
+@media (min-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+    
+
+}
+/*For Tablet Width Layout*/
+@media (max-width: 991px) {
+    a.happyden-portfolio-content{
+        margin: 10px;
+    }
+    .happyden-portfolio-excerpt{
+        flex: 100%;
+    }
+    .happyden-portfolio-excerpt {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+    }
+
+    .title-icon {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    }
+}
+
+/*For Tablet Layout*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    
+
+}
+
+/*For Wide Mobile Layout*/
+@media (max-width: 767px) {
+
+    
+
+}
+
+
+/*For 320-384px up Mobile Layout*/
+@media (max-width: 479px) {
+
+
+}
+
